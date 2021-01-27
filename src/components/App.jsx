@@ -95,6 +95,7 @@ class App extends React.Component {
       });
   }
 
+  // Activates upon mouseover of a carousel to change the photo in the primary area
   swapPhoto(e) {
     this.setState({
       primary: {
@@ -104,6 +105,7 @@ class App extends React.Component {
     });
   }
 
+  // Activates upon mouseover of primary photo and renders a zoomed in version to the zoom container
   toggleZoomIn(event) {
     let x = event.nativeEvent.offsetX;
     let y = event.nativeEvent.offsetY;
@@ -116,6 +118,7 @@ class App extends React.Component {
     });
   }
 
+  // Activates on mouseOut of primary photo to hide the zoomed in version
   toggleZoomOut(event) {
     this.setState({
       zoom: false

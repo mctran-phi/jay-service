@@ -17,6 +17,8 @@ app.get('/', (req, res) => {
   res.send(200);
 });
 
+// Returns data about PS5 Controller product
+// Can be refactored to use an id to find products
 app.get('/products/', (req, res) => {
   let id = req.params.id;
   Product.find({ name: 'DualSense Wireless Controller' })

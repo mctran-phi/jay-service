@@ -68,7 +68,7 @@ var ps5controller = {
 
 sampleProducts.push(ps5controller);
 
-// inserts 100 sample products into Products db
+// Inserts 100 sample products and PS5 controller into DB
 const insertProducts = function () {
   Product.create(sampleProducts)
     .then(() => {
@@ -78,6 +78,5 @@ const insertProducts = function () {
       console.error(err);
     });
 };
-
 
 insertProducts();
