@@ -42,7 +42,6 @@ class Carousel extends React.Component {
       }
     }
     );
-    console.log('view:', view);
 
     return (
       <div id="photo-carousel">
